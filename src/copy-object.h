@@ -33,7 +33,9 @@ protected:
 	static _T_TARGET* ShallowCopy(const _T_SRC* src)
 	{
 		_T_TARGET* pointer = dynamic_cast<_T_TARGET*>(const_cast<_T_SRC*>(src));
-		ASSERT_WITH_MSG(pointer != NULL, "can not convert " << TYPE_ID_NAME(_T_SRC) << " to " << TYPE_ID_NAME(_T_TARGET));
+		ASSERT_WITH_MSG(pointer != NULL, "can not convert " << TYPE_ID_NAME(_T_SRC)
+			<< " to " << TYPE_ID_NAME(_T_TARGET)
+			<< ", please check the first template type of CopyableTemplate when using");
 		_T_TARGET* copy = new _T_TARGET(*pointer);
 		return copy;
 	}
