@@ -5,16 +5,24 @@
 #include <exception>
 #include <cstdlib>
 
+#ifdef ASSERT_WITH_MSG
+	#error ASSERT_WITH_MSG is already defined
+#endif //#ifdef ASSERT_WITH_MSG
+
+#ifdef ASSERT
+	#error ASSERT is already defined
+#endif //#ifdef ASSERT_WITH_MSG
+
 //ASSERT with message
 #define ASSERT_WITH_MSG(condition, message)							\
 	do											\
 	{											\
 		if (!(condition))								\
 		{										\
-			std::cerr << "Assert failed."						\
-				  << "condition=\"" << #condition << "\""			\
+			std::cerr << "assert failed."						\
+				  << " condition=\"" << #condition << "\""			\
 				  << ", " << message						\
-				  << ". Assert @file=" << __FILE__ << ", line=" << __LINE__	\
+				  << ". assert @file=" << __FILE__ << ", line=" << __LINE__	\
 				  << std::endl;							\
 			std::terminate();							\
 		}										\
