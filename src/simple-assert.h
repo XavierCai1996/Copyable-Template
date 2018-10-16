@@ -11,7 +11,7 @@
 
 #ifdef ASSERT
 	#error ASSERT is already defined
-#endif //#ifdef ASSERT_WITH_MSG
+#endif //#ifdef ASSERT
 
 //ASSERT with message
 #define ASSERT_WITH_MSG(condition, message)							\
