@@ -54,8 +54,8 @@ public:
 
 /*
  * the template to define API of COPY function
- * _THIS means your new class' name
- * _BASE means your new class' parent class type (default to CopyableObject)
+ * _T_THIS means your new class' name
+ * _T_BASE means your new class' parent class type (default to CopyableObject)
  */
 template <class _T_THIS, class _T_BASE = CopyableObject>
 class CopyableTemplate : public _T_BASE
