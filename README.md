@@ -18,4 +18,4 @@ A framework using object-oriented programming to provide interfaces for copy the
 
 Contact me on my mail address cxw39@foxmail.com
 
-and Sorry about my poor English XD.
+and sorry about my poor English XD.
