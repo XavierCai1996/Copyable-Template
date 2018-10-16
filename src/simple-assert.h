@@ -20,9 +20,9 @@
 		if (!(condition))								\
 		{										\
 			std::cerr << "assert failed."						\
-				  << " condition=\"" << #condition << "\""			\
-				  << ", " << message						\
-				  << ". assert @file=" << __FILE__ << ", line=" << __LINE__	\
+				  << " condition=\"" << #condition << "\","			\
+				  << "\n" << message << "."					\
+				  << "\nassert @file=" << __FILE__ << ", line=" << __LINE__	\
 				  << std::endl;							\
 			std::terminate();							\
 		}										\
