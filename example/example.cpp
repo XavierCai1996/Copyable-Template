@@ -1,7 +1,7 @@
 #include "../src/copy-object.h"
 
 /********** class Base start here **********/ 
-class Base : public CopyableTemplate<Base>{
+class Base : public CopyableTemplate<Base> {
 public:
 	Base();
 	/*
