@@ -36,6 +36,18 @@ A framework using object-oriented programming to provide interfaces for copy the
         }
     };
     ```
+    
+* User-friendly interfaces.
+    
+    Get a base type copy:
+    
+    `ClassWithPointerMember original;`
+   
+   `CopyableObject* copyBase = original.Copy();`
+    
+    Get a original type copy:
+    
+    `ClassWithPointerMember* copy = original.CopyObject();`
 
 ## How to run the example
 
