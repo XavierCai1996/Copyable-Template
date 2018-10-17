@@ -2,6 +2,41 @@
 
 A framework using object-oriented programming to provide interfaces for copy the object.
 
+### Features
+* Light-weight framework to achieve deep copy.
+* Automatic copy interface. You just need to allocte memory for pointer members.
+
+    An example object without any pointer member:
+    ```
+    class ClassWithoutPointerMember : public CopyableTemplate<ClassWithoutPointerMember> {
+    private:
+        int i, j;
+    //...
+    //you don not need to override any interface, because there is no pointer member inside this class
+    };
+    ```
+    
+    An example object with a pointer member :
+    ```
+    class ClassWithPointerMember : public CopyableTemplate<ClassWithPointerMember> {
+    private:
+        int* i;
+        int j;
+    public:
+        ClassWithPointerMember() : i(new int(0)), j(0) { }
+        //virtual is required here
+        virtual ~ClassWithPointerMember() {
+            delete i;
+        }
+    protected:
+        //virtual, const, override are required here
+        virtual DoCopy(ClassWithPointerMember* copy) const override {
+           //just care about pointer member
+           copy->i = new int(*i);
+        }
+    };
+    ```
+
 ## How to run the example
 
 1.Enter to the folder ./example/.
