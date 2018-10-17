@@ -43,11 +43,11 @@ A framework using object-oriented programming to provide interfaces for copy the
 
 2.Run the script ./run.ls.
 
-## How to use this template in my project
+## How to use this template in projects
 
-1.Copy the ./src/ folder to your project.
+1.Copy the folder ./src/ to your projects.
 
-2.Include the header file ./src/copy-object.h in your code.
+2.Include the header file ./src/copy-object.h in your codes.
 
 ## Contact me
 
