@@ -51,9 +51,9 @@ A framework using object-oriented programming to provide interfaces for copy the
 
 ## How to run the example
 
-1.Enter to the folder `./example/.`
+1.Enter to the folder `./example/`.
 
-2.Run the script `./run.ls.`
+2.Run the script `./run.ls`.
 
 ## How to use this template in projects
 
