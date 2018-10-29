@@ -22,7 +22,9 @@
 			std::cerr << "assert failed."						\
 				  << " condition=\"" << #condition << "\","			\
 				  << "\n" << message << "."					\
-				  << "\nassert @file=" << __FILE__ << ", line=" << __LINE__	\
+				  << "\nassert @file=" << __FILE__                              \
+				  << ", line=" << __LINE__	                                \
+				  << ", func=" << __FUNCTION__                                  \
 				  << std::endl;							\
 			std::terminate();							\
 		}										\
@@ -33,3 +35,4 @@
 #define ASSERT(condition) ASSERT_WITH_MSG(condition, "")
 
 #endif
+
