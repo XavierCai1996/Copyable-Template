@@ -61,6 +61,15 @@ A framework using object-oriented programming to provide interfaces for copy the
 
 2.Include the header file `./src/copy-object.h` in your codes.
 
+## Dependencies
+
+The current versions and compile options for the dependencies are:
+
+### Linux
+* g++ 4.8.1
+* make 3.81
+* cmake 2.8.0
+
 ## Contact me
 
 Contact me on my mail address cxw39@foxmail.com
