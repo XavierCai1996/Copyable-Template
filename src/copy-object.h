@@ -69,7 +69,9 @@ protected:
 	}
 
 public:
-	//friend _T_THIS;
+	virtual ~CopyableTemplate() { }
+	friend _T_THIS;
+	
 	virtual CopyableObject* Copy() const override
 	{
 		//_T_THIS* instance = new _THIS();
